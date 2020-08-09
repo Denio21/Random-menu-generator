@@ -17,13 +17,13 @@ var maso = {
 };
 
 var zelenina = {
-    "HOUBY": 75,
-    "PAPRIKA": 75,
-    "BROKOLICE": 75,
-    "SOJOVÉ VÝHONKY": 75,
-    "CUKETA": 75,
-    "ZELENÉ FAZOLE": 75,
-    "KUKUŘICE": 75,
+    "HOUBY": 15,
+    "PAPRIKA": 15,
+    "BROKOLICE": 15,
+    "SOJOVÉ VÝHONKY": 15,
+    "CUKETA": 15,
+    "ZELENÉ FAZOLE": 15,
+    "KUKUŘICE": 15,
     "JARNÍ CIBULKA": 15
 };
 
