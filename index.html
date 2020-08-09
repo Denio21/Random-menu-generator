@@ -1,80 +1,69 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
-<body>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <h1>Random myWokAnd Sisht</h1>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <p id="zaklad"></p>
-    <p id="maso"></p>
-    <p id="zelenina"></p>
-    <p id="omacka"></p>
-    <p id="orisky"></p>
-    <button id="demo" onclick="getMenu()">Zmáčkni pro vygenerování menu</button>
+    <script src="js/generation.js" type="text/javascript"></script>
+    <script src="js/randomBackground.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Random Generátor</title>
+</head>
+
+
+<body style="text-align: center;margin:auto;">
+    <h1>My Wok and Sushi random menu</h1>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h2>Základ</h2>
+                <p id="zaklad"></p>
+            </div>
+            <div class="col-sm">
+                <h2>Maso</h2>
+                <p id="maso"></p>
+            </div>
+            <div class="col-sm">
+                <h2>Zelenina</h2>
+                <p id="zelenina"></p>
+            </div>
+            <div class="col-sm">
+                <h2>Omáčka</h2>
+                <p id="omacka"></p>
+            </div>
+            <div class="col-sm">
+                <h2>Oříšky</h2>
+                <p id="orisky"></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <p id="cena"></p>
+    <button type="button" class="btn btn-primary" onclick="getMenu()">Vygeneruj menu</button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 
     <script>
-        var zaklad = {
-            "VAJEČNÉ NUDLE, ZELENINA, VEJCE": 75,
-            "RÝŽOVÉ NUDLE, ZELENINA, VEJCE": 75,
-            "CELOZRNNÉ NUDLE, ZELENINA": 75,
-            "NUDLE UDON, ZELENINA": 75,
-            "SMAŽENÁ RÝŽE, ZELENINA, VEJCE": 75,
-            "CELOZRNNÁ RÝŽE, ZELENINA, VEJCE": 75
-        };
-
-        var maso = {
-            "TOFU": 35,
-            "KUŘECÍ": 35,
-            "HOVĚZÍ": 45,
-            "KACHNÍ": 45,
-            "KREVETY": 50,
-            "LOSOS": 50
-        };
-
-        var zelenina = {
-            "HOUBY": 75,
-            "PAPRIKA": 75,
-            "BROKOLICE": 75,
-            "SOJOVÉ VÝHONKY": 75,
-            "CUKETA": 75,
-            "ZELENÉ FAZOLE": 75,
-            "KUKUŘICE": 75,
-            "JARNÍ CIBULKA": 15
-        };
-
-        var omacka = {
-            "TERIYAKI": 0,
-            "THAJSKÁ OMÁČKA": 0,
-            "SLADKÉ CHILLI A SÓJA": 0,
-            "ČERVENÉ KARI A KOKOS": 0,
-            "ZELENÉ KARI A KOKOS": 0,
-            "PAD THAI OMÁČKA": 0,
-            "ARAŠÍDOVÁ OMÁČKA": 0
-        }
-
-        var orisky = {
-            "KORIANDR": 10,
-            "KEŠU": 10,
-            "DRCENÉ ARAŠÍDY": 10,
-            "SEZAMOVÁ SEMÍNKA": 10,
-            "SMAŽENÁ CIBULE": 10
-        }
-
-
-        function randomProperty(obj) {
-            var keys = Object.keys(obj);
-            return Object.keys(obj)[Math.floor(Math.random() * Object.keys(obj).length)];
-        };
-
-        function getMenu() {
-            document.getElementById("zaklad").innerHTML = randomProperty(zaklad);
-            document.getElementById("maso").innerHTML = randomProperty(maso);
-            document.getElementById("zelenina").innerHTML = randomProperty(zelenina);
-            document.getElementById("omacka").innerHTML = randomProperty(omacka);
-            document.getElementById("orisky").innerHTML = randomProperty(orisky);
-        };
+        random_bg_color();
+        getMenu();
     </script>
-
 </body>
 
 </html>

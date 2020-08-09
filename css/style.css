@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto&display=swap');
+p{
+    font-size: 120%;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Luckiest Guy', cursive;
+}
+body{
+    margin: auto;
+    padding-top: 5ex;
+}
