@@ -5,6 +5,8 @@ function random_bg_color() {
         "#f3ecc2",
         "#14b1ab"
     ]
+    var metaThemeColor = document.querySelector("meta[name=theme-color]");
     var bgColor = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.background = bgColor;
+    metaThemeColor.setAttribute("content", bgColor);
 }
