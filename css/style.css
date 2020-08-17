@@ -6,8 +6,12 @@ p{
 }
 h1{
     font-family: 'Luckiest Guy', cursive;
+    color:black;
 }
 body{
     margin: auto;
     padding-top: 4ex;
+}
+a{
+    color:white;
 }
