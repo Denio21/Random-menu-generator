@@ -4,18 +4,11 @@
 function random_bg_color() {
     //Pole s barvami, mezi kterými se bude vybírat. Toto je jediná věc, kterou tady máte upravit. Pokud vyberete moc tmavé barvy, tak by jste měli změnit i barvu písma na stránce
     var colors = [
-        "#fc5c65",
-        "#fd9644",
-        "#fed330",
-        "#26de81",
-        "#2bcbba",
-        "#fa8231",
-        "#f7b731",
-        "#20bf6b",
-        "#0fb9b1",
-        "#45aaf2",
-        "#4b7bec",
-        "#2d98da"
+        "#a83232",
+        "#b3b3b3",
+        "#ffe600",
+        "#0dff00",
+        "#ff00f2"
     ]
 
     //Výběr tagu pro změnu barvy okna prohlížeče (chrome).
